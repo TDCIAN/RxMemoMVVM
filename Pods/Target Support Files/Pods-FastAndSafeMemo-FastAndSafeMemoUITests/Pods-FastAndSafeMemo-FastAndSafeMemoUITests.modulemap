@@ -1,0 +1,6 @@
+framework module Pods_FastAndSafeMemo_FastAndSafeMemoUITests {
+  umbrella header "Pods-FastAndSafeMemo-FastAndSafeMemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
