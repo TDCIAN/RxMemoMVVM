@@ -17,6 +17,9 @@
 		18E02DDE25F19C3700A83CBE /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02DDD25F19C3700A83CBE /* Memo.swift */; };
 		18E02DE625F19D3C00A83CBE /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02DE525F19D3C00A83CBE /* MemoStorageType.swift */; };
 		18E02DF325F19E5B00A83CBE /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02DF225F19E5B00A83CBE /* MemoryStorage.swift */; };
+		18E02DF825F1A38400A83CBE /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02DF725F1A38400A83CBE /* MemoListViewController.swift */; };
+		18E02DFD25F1A3B600A83CBE /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02DFC25F1A3B600A83CBE /* MemoDetailViewController.swift */; };
+		18E02E0225F1A3D700A83CBE /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02E0125F1A3D700A83CBE /* MemoComposeViewController.swift */; };
 		2933F275D4ACD9574CEB3303 /* Pods_FastAndSafeMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E02903021677523A363FB0C /* Pods_FastAndSafeMemo.framework */; };
 		99073FE4ECBB34947C8D0CC1 /* Pods_FastAndSafeMemo_FastAndSafeMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C7E908EFF2563EE36946B8 /* Pods_FastAndSafeMemo_FastAndSafeMemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,9 @@
 		18E02DDD25F19C3700A83CBE /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		18E02DE525F19D3C00A83CBE /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		18E02DF225F19E5B00A83CBE /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		18E02DF725F1A38400A83CBE /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		18E02DFC25F1A3B600A83CBE /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		18E02E0125F1A3D700A83CBE /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
 		44C7E908EFF2563EE36946B8 /* Pods_FastAndSafeMemo_FastAndSafeMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastAndSafeMemo_FastAndSafeMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2A5F16111B33468640C0FA /* Pods-FastAndSafeMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastAndSafeMemo.release.xcconfig"; path = "Target Support Files/Pods-FastAndSafeMemo/Pods-FastAndSafeMemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E02903021677523A363FB0C /* Pods_FastAndSafeMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastAndSafeMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,9 @@
 			children = (
 				18E02D6625F1939A00A83CBE /* Main.storyboard */,
 				18E02D6E25F1939A00A83CBE /* LaunchScreen.storyboard */,
+				18E02DF725F1A38400A83CBE /* MemoListViewController.swift */,
+				18E02DFC25F1A3B600A83CBE /* MemoDetailViewController.swift */,
+				18E02E0125F1A3D700A83CBE /* MemoComposeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -446,10 +455,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E02DF325F19E5B00A83CBE /* MemoryStorage.swift in Sources */,
+				18E02DFD25F1A3B600A83CBE /* MemoDetailViewController.swift in Sources */,
 				18E02D6125F1939A00A83CBE /* AppDelegate.swift in Sources */,
 				18E02DE625F19D3C00A83CBE /* MemoStorageType.swift in Sources */,
 				18E02D6B25F1939A00A83CBE /* FastAndSafeMemo.xcdatamodeld in Sources */,
 				18E02D6325F1939A00A83CBE /* SceneDelegate.swift in Sources */,
+				18E02DF825F1A38400A83CBE /* MemoListViewController.swift in Sources */,
+				18E02E0225F1A3D700A83CBE /* MemoComposeViewController.swift in Sources */,
 				18E02DDE25F19C3700A83CBE /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

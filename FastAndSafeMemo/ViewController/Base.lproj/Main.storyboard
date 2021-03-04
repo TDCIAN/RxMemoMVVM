@@ -27,7 +27,7 @@
         <!--New Memo-->
         <scene sceneID="aI3-ND-Ib0">
             <objects>
-                <viewController id="ta5-IC-5SI" sceneMemberID="viewController">
+                <viewController id="ta5-IC-5SI" customClass="MemoComposeViewController" customModule="FastAndSafeMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Up4-nU-coW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--Memo List-->
         <scene sceneID="INz-f7-mKG">
             <objects>
-                <viewController id="fmw-Wn-wqq" sceneMemberID="viewController">
+                <viewController id="fmw-Wn-wqq" customClass="MemoListViewController" customModule="FastAndSafeMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="25Q-qW-yFj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Show Memo-->
         <scene sceneID="VSH-IO-Uxu">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="xR1-pI-Mdk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="xR1-pI-Mdk" customClass="MemoDetailViewController" customModule="FastAndSafeMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obB-DA-O87">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
