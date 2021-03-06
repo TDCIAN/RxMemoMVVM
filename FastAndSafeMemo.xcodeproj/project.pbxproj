@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		022BBFFB40803125B89D3E73 /* Pods_FastAndSafeMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA391549E46992211E78342E /* Pods_FastAndSafeMemoTests.framework */; };
+		1826DA3A25F3A50300E25B0C /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826DA3925F3A50300E25B0C /* CommonViewModel.swift */; };
 		18E02D6125F1939A00A83CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02D6025F1939A00A83CBE /* AppDelegate.swift */; };
 		18E02D6325F1939A00A83CBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E02D6225F1939A00A83CBE /* SceneDelegate.swift */; };
 		18E02D6825F1939A00A83CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E02D6625F1939A00A83CBE /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		027BECC53A70EF29E604D5A7 /* Pods-FastAndSafeMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastAndSafeMemo.debug.xcconfig"; path = "Target Support Files/Pods-FastAndSafeMemo/Pods-FastAndSafeMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1826DA3925F3A50300E25B0C /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		18E02D5D25F1939A00A83CBE /* FastAndSafeMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastAndSafeMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E02D6025F1939A00A83CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E02D6225F1939A00A83CBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				18E02E0625F1A41400A83CBE /* MemoListViewModel.swift */,
 				18E02E0B25F1A44000A83CBE /* MemoDetailViewModel.swift */,
 				18E02E1025F1A47A00A83CBE /* MemoComposeViewModel.swift */,
+				1826DA3925F3A50300E25B0C /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				18E02E2525F1A8C700A83CBE /* SceneCoordinatorType.swift in Sources */,
 				18E02E0725F1A41400A83CBE /* MemoListViewModel.swift in Sources */,
 				18E02E0C25F1A44000A83CBE /* MemoDetailViewModel.swift in Sources */,
+				1826DA3A25F3A50300E25B0C /* CommonViewModel.swift in Sources */,
 				18E02E1B25F1A66F00A83CBE /* TransitionModel.swift in Sources */,
 				18E02DF825F1A38400A83CBE /* MemoListViewController.swift in Sources */,
 				18E02E0225F1A3D700A83CBE /* MemoComposeViewController.swift in Sources */,
