@@ -6,7 +6,7 @@ target 'FastAndSafeMemo' do
   use_frameworks!
 
   # Pods for FastAndSafeMemo
-  pod 'RxSwift'
+  pod 'RxSwift', '~> 5.1.1'
   pod 'RxCocoa'
   pod 'Action'
   pod 'NSObject+Rx'

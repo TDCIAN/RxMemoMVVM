@@ -1,23 +1,23 @@
 PODS:
-  - Action (4.3.0):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - Differentiator (5.0.0)
-  - "NSObject+Rx (5.2.0)":
-    - RxSwift (~> 6.0.0)
-  - RxCocoa (6.0.0):
-    - RxRelay (= 6.0.0)
-    - RxSwift (= 6.0.0)
-  - RxCoreData (1.0.1):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxDataSources (5.0.0):
-    - Differentiator (~> 5.0)
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
-  - RxRelay (6.0.0):
-    - RxSwift (= 6.0.0)
-  - RxSwift (6.0.0)
+  - Action (4.2.0):
+    - RxCocoa (< 7.0, >= 5.0)
+    - RxSwift (< 7.0, >= 5.0)
+  - Differentiator (4.0.1)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreData (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
 
 DEPENDENCIES:
   - Action
@@ -25,7 +25,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxCoreData
   - RxDataSources
-  - RxSwift
+  - RxSwift (~> 5.1.1)
 
 SPEC REPOS:
   trunk:
@@ -39,15 +39,15 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  Action: 9891cd1b0a9047557d7e58e8dfae743e19d08197
-  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  "NSObject+Rx": 488b91a66043cc47de9cd5de9264f2ae1e2fcb13
-  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
-  RxCoreData: 4c1686b30499c05b90104eec1a879f41aa1a0a65
-  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
-  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
-  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  Action: 5dc2194f7a0b77857c82a677b0da655f197c005f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCoreData: 1ed5f83e80facccc90fc054eb7f39a44177de56a
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
 
-PODFILE CHECKSUM: e40d1b708e3e4342e4c5f001439ae54a715ff933
+PODFILE CHECKSUM: 4b0748b06030a8f5a261dd278c415603fe1d2b49
 
 COCOAPODS: 1.10.1
