@@ -31,10 +31,34 @@
                     <view key="view" contentMode="scaleToFill" id="Up4-nU-coW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tg9-3u-zP0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zpt-3h-fIV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Tg9-3u-zP0" secondAttribute="bottom" id="FF7-Gc-tpj"/>
+                            <constraint firstItem="Tg9-3u-zP0" firstAttribute="top" secondItem="Up4-nU-coW" secondAttribute="top" id="JEP-HI-Bb9"/>
+                            <constraint firstItem="Tg9-3u-zP0" firstAttribute="leading" secondItem="zpt-3h-fIV" secondAttribute="leading" id="bsW-IE-tHf"/>
+                            <constraint firstItem="Tg9-3u-zP0" firstAttribute="trailing" secondItem="zpt-3h-fIV" secondAttribute="trailing" id="w2H-yp-2F0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Memo" id="DuC-z9-P6j"/>
+                    <navigationItem key="navigationItem" title="New Memo" id="DuC-z9-P6j">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vmP-ho-Tbi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5fj-hK-ru0"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="vmP-ho-Tbi" id="k1N-P4-MeC"/>
+                        <outlet property="contentTextView" destination="Tg9-3u-zP0" id="VOF-Ia-dqW"/>
+                        <outlet property="saveButton" destination="5fj-hK-ru0" id="rd5-Iw-bqG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmO-WH-vdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,6 +172,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
