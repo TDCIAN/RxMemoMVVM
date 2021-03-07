@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let storage = MemoryStorage()
         let coordinator = SceneCoordinator(window: window!)
-        let listViewModel = MemoListViewModel(title: "나의 메모", sceneCoordinator: coordinator, storage: storage)
+        let listViewModel = MemoListViewModel(title: "Memo List", sceneCoordinator: coordinator, storage: storage)
         let listScene = Scene.list(listViewModel)
         
         coordinator.transition(to: listScene, using: .root, animated: false)
