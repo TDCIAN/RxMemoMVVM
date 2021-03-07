@@ -30,6 +30,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             .drive(navigationItem.rx.title)
             .disposed(by: rx.disposeBag)
         
+        /* 메모를 편집한 후에 테이블뷰를 업데이트 해야 하는데 단순히 리로드데이터를 호출하는 방식으로는 문제를 해결할 수 없다.
+         옵저버블, 더 정확히는 서브젝트와 바인딩 되어 있다. 서브젝트가 편집된 내용을 다시 방출하도록 해야 한다. */
         viewModel.contents
             .bind(to: listTableView.rx.items) { tableView, row, value in
                 switch row {
@@ -47,7 +49,7 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             }
             .disposed(by: rx.disposeBag)
         
-
+        editButton.rx.action = viewModel.makeEditAction()
     }
 
 }
