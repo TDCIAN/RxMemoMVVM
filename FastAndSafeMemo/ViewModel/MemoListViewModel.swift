@@ -40,4 +40,19 @@ class MemoListViewModel: CommonViewModel {
                 }
         }
     }
+    // 클로저 내부에서 셀프에 접근해야 하기 때문에 lazy로 선언했다
+    lazy var detailAction: Action<Memo, Void> = {
+        return Action { memo in
+            let detailViewModel = MemoDetailViewModel(memo: memo, title: "Show Memo", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            
+            let detailScene = Scene.detail(detailViewModel)
+            
+            return self.sceneCoordinator.transition(to: detailScene, using: .push, animated: true).asObservable().map { _ in }
+        }
+    }()
+    
+    // back button과 바인딩할 액션
+    lazy var popAction = CocoaAction { [unowned self] in
+        return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
+    }
 }
