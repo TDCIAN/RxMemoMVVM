@@ -53,21 +53,29 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         
         let keyboardObservable = Observable.merge(willShowObservable, willHideObservable).share()
         
-        keyboardObservable.subscribe(onNext: { [weak self] height in
-            guard let strongSelf = self else { return }
-            var inset = strongSelf.contentTextView.contentInset
-            inset.bottom = height
-            
-            // scroll Indicator에도 하단 여백 추가
-            var scrollInset = strongSelf.contentTextView.scrollIndicatorInsets
-            scrollInset.bottom = height
-            
-            UIView.animate(withDuration: 0.3) {
-                strongSelf.contentTextView.contentInset = inset
-                strongSelf.contentTextView.scrollIndicatorInsets = scrollInset
-            }
-        })
-        .disposed(by: rx.disposeBag)
+        keyboardObservable
+//            .map { [unowned self] height -> UIEdgeInsets in
+//                var inset = self.contentTextView.contentInset
+//                inset.bottom = height
+//                return inset
+//            }
+            .toContentInset(of: contentTextView)
+//            .subscribe(onNext: { [weak self] height in
+//            guard let strongSelf = self else { return }
+//            var inset = strongSelf.contentTextView.contentInset
+//            inset.bottom = height
+//
+//            // scroll Indicator에도 하단 여백 추가
+//            var scrollInset = strongSelf.contentTextView.scrollIndicatorInsets
+//            scrollInset.bottom = height
+//
+//            UIView.animate(withDuration: 0.3) {
+//                strongSelf.contentTextView.contentInset = inset
+//                strongSelf.contentTextView.scrollIndicatorInsets = scrollInset
+//            }
+//        })
+            .bind(to: contentTextView.rx.contentInset)
+            .disposed(by: rx.disposeBag)
                 
     }
     
@@ -82,6 +90,26 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         
         if contentTextView.isFirstResponder {
             contentTextView.resignFirstResponder()
+        }
+    }
+}
+
+// Element 형식을 CGFloat 형식으로 제한. 여기서 구현하는 연산자는 CGFloat를 방출하는 Observable에서만 사용 가능
+extension ObservableType where Element == CGFloat {
+    func toContentInset(of textView: UITextView) -> Observable<UIEdgeInsets> {
+        return map { height in
+            var inset = textView.contentInset
+            inset.bottom = height
+            return inset
+        }
+    }
+}
+
+extension Reactive where Base: UITextView {
+    var contentInset: Binder<UIEdgeInsets> {
+        return Binder(self.base) { textView, inset in
+            textView.contentInset = inset
+            textView.scrollIndicatorInsets = inset
         }
     }
 }
